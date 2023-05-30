@@ -1,0 +1,11 @@
+[Unit]
+Description=Weather Check Service
+
+[Service]
+ExecStart=/path/to/your/venv/bin/python /path/to/your/project/manage.py weather_check
+Restart=always
+User=yourusername
+WorkingDirectory=/path/to/your/project/
+
+[Install]
+WantedBy=multi-user.target
